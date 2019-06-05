@@ -1,0 +1,16 @@
+body{
+    padding-top: 2%;
+}
+
+.pristine{
+    background-color: none;
+}
+.invalid{
+    background-color: pink;
+}
+.valid{
+    background-color: lightgreen;
+}
+.message-invalid{
+    color: #ff0000;
+}

@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>Commands</h1>
+        </div>
+
+        <p class="lead">
+            Run any command in the field below:
+        </p>
+        <form novalidate autocomplete="off" class="form" name="frmCommand" ng-submit="sendCommand(frmCommand.$valid)">
+            <div class="form-group">
+                <label for="command" class="hidden">command</label>
+                <input 
+                    placeholder="Fill your command here!" 
+                    type="text" 
+                    class="form-control" 
+                    ng-model="data.command" 
+                    name="command" 
+                    id="command" 
+                    ng-class="{invalid: frmCommand.command.$dirty && frmCommand.command.$invalid, 
+                              pristine: frmCommand.command.$pristine && frmCommand.$invalid,
+                              valid: frmCommand.command.$dirty && frmCommand.command.$valid  
+                            }"
+                    required/>
+                <div ng-show="frmCommand.command.$dirty && frmCommand.command.$invalid" class="help-block">This field is required</div>
+            </div>
+        </form>
+    </div>
+</div>
