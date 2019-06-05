@@ -1,0 +1,42 @@
+{
+  "name": "automation-node",
+  "version": "0.1.0",
+  "description": "Automation Application in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint --fix ./src/ && mocha --opts ./mocha.opts",
+    "start": "nodemon ./bin/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoamac/automation-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugoamac/automation-node/issues"
+  },
+  "homepage": "https://github.com/hugoamac/automation-node#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.12",
+    "bunyan-pretty-stream": "^1.0.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "sinon": "^7.3.2",
+    "sinon-chai": "^3.3.0",
+    "sinon-express-mock": "^2.2.0"
+  }
+}
