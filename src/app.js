@@ -1,7 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const FileSystemService = require("./services/filesystem");
 
+const filesystemService = new FileSystemService();
+const CommandRouter = require("./domain/command/router")(filesystemService);
 /**
  * This class provides the wrapper to application express
  */
@@ -31,6 +34,8 @@ class App {
 	 * this method provides the wrapper to routes of express application
 	 */
 	routes() {
+
+		this.app.use("/api/command", CommandRouter);
 
 		this.app.get("*", (req, res) => {
 
