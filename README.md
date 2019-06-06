@@ -8,6 +8,7 @@ This application uses open source projects to work
 
 * [Node.js] - evented I/O for the backend.
 * [Express] - fast node.js network app framework.
+* [AngularJS] - AngularJS is a toolset for building the framework most suited to your application development. 
 * [mochajs] - tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases.
 * [chaijs] -  BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
 * [sinonjs] - Standalone test spies, stubs and mocks for JavaScript. 
@@ -30,7 +31,6 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 $ cd automation-node
 $ npm install -d
-$ node node_modules/.bin/bower install
 $ npm start
 ```
 
@@ -71,6 +71,21 @@ Verify the deployment by navigating to your server address in your preferred bro
 http://yourdockerip:8080/
 ```
 
+### Resources
+
+| VERB | Endpoint | README |
+| ------ | ------ | ------ |
+| GET | /api/command/| This resource retrieves the all commands |
+| POST | /api/command/ | *This resource creates a new command |
+
+*The payload to creates a new command should be like it:
+
+```json
+{
+    "cmd": "mkdir folder",
+    "description": "This command create a new folder"
+}
+```
 License
 ----
 
