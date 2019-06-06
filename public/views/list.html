@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>All automation commands <small><a href="/#!/" class="btn btn-default btn-xs">Home</a></small></h1>
+        </div>
+        <div ng-show="data.length > 0">
+            <div ng-repeat="item in data">
+                <h5>{{ item.description }}</h5>
+                <code>
+                    {{ item.cmd }}
+                </code>
+            </div>
+        </div>
+    </div>
+</div>

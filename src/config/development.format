@@ -1,0 +1,7 @@
+//Replace the extension of this file with json, with the options below:
+{
+	"server": {
+		"host": "",// put your hostname
+		"port": 0 // put your port
+	}
+}

@@ -1,0 +1,9 @@
+{"id":1559798393593,"cmd":"open window","description":"comando abre janela da casa"}
+{"id":1559798454059,"cmd":"close window","description":"comando para fechar janela da casa"}
+{"id":1559798713259,"cmd":"turn on the lamp","description":"comando acende a lampada"}
+{"id":1559799495902,"cmd":"turn off the lamp","description":"comando apaga a lampada"}
+{"id":1559799567160,"cmd":"turn on the tv","description":"comando liga a tv"}
+{"id":1559799649848,"cmd":"turn off the tv","description":"comado desliga a tv"}
+{"id":1559799761367,"cmd":"turn on the radio","description":"comando para ligar o radio"}
+{"id":1559799865610,"cmd":"turn off the radio","description":"comando desliga radio"}
+{"id":1559801492606,"cmd":"turn off the gas","description":"comando para desligar o gas"}
