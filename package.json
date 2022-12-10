@@ -22,7 +22,7 @@
     "body-parser": "^1.19.0",
     "bunyan": "^1.8.12",
     "bunyan-pretty-stream": "^1.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "bower": "^1.8.8",
